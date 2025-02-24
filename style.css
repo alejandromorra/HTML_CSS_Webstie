@@ -60,7 +60,13 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  font-size: 2rem; /* Large text */
+  font-weight: bold; /* Emphasized */
+  color: #333; /* Dark gray for professionalism */
+  text-transform: uppercase; /* Makes it more logo-like */
+  letter-spacing: 2px; /* Adds spacing for clarity */
+  text-align: center; /* Centers the text */
 }
 
 .logo:hover {
@@ -151,7 +157,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -167,7 +172,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 70vh;
 }
 
 .section__pic-container {
@@ -382,8 +387,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 10%;
-  height: 10%;
+  width: 30%;
+  height: 30%;
 }
 
 .project-title {
