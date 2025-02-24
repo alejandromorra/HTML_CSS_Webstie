@@ -456,12 +456,33 @@ article .icon {
 }
 
 .article-container-organizations {
-  justify-content: left;
   display: flex;
-  text-align: initial;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  gap: 13rem;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  justify-content: space-around; /* Distribute space evenly */
+  gap: 1rem; /* Add space between items */
+  text-align: center; /* Center the text within each article */
+  max-width: 100%; /* Ensure it doesn't overflow its container */
+}
+
+.article-container-organizations article {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  max-width: 250px; /* Limit the width of each article */
+  padding: 1rem; /* Add some space inside each article */
+}
+
+.article-container-organizations img {
+  width: 100%;
+  max-width: 150px; /* Limit the size of the image */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+.article-container-organizations h3,
+.article-container-organizations p {
+  margin: 0.5rem 0;
+  word-wrap: break-word; /* Ensure text breaks if it is too long */
+  width: 100%;
 }
 .icon-frat{
   height: 10rem;
