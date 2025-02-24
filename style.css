@@ -440,15 +440,14 @@ article .icon {
   flex-direction: column;
 }
 
-.article-container-organizations{
+.article-container-organizations {
   justify-content: left;
   display: flex;
   text-align: initial;
   flex-wrap: nowrap;
   flex-direction: row;
-  gap: 24rem;
+  gap: 13rem;
 }
-
 .icon-frat{
   height: 10rem;
 }
