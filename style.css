@@ -65,6 +65,20 @@
     text-align: center;
   }
 
+  .section__pic-containertwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centers horizontally */
+    height: 250px; 
+    width: 250px;
+  }
+
+  /* Add spacing below the picture */
+  .section__pic-containertwo img {
+    margin-bottom: 1.5rem; /* Adjust spacing as needed */
+  }
+
   /* Footer */
   footer {
     height: auto;
