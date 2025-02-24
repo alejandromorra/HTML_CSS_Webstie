@@ -8,6 +8,10 @@
     margin: 0 2rem; /* Reduce margins for better fitting */
   }
 
+  .section__pic-container {
+    display: none; /* Hides the entire container */
+  }
+
   /* Navigation */
   .nav-links {
     display: none; /* Hide desktop nav links */
@@ -18,11 +22,11 @@
   }
 
   /* Profile Section */
+
   #profile {
     flex-direction: column;
+    align-items: center; /* Center all elements inside */
     text-align: center;
-    gap: 2rem;
-    height: auto;
   }
 
   .section__pic-container {
@@ -30,9 +34,10 @@
     width: 150px;
   }
 
+  /* Center section__pic-containertwo */
   .section__pic-containertwo {
-    height: 250px;
-    width: 250px;
+    width: fit-content; /* Prevents it from stretching too much */
+    margin: 0 auto;
   }
 
   /* About Section */
@@ -40,6 +45,9 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+  .about-pic {
+    max-width: 250px; /* Shrinks for smaller screens */
   }
 
   .details-container {
@@ -65,18 +73,9 @@
     text-align: center;
   }
 
-  .section__pic-containertwo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* Centers horizontally */
-    height: 250px; 
-    width: 250px;
-  }
-
   /* Add spacing below the picture */
   .section__pic-containertwo img {
-    margin-bottom: 1.5rem; /* Adjust spacing as needed */
+    margin-bottom: 1rem; /* Adjust spacing as needed */
   }
 
   /* Footer */
