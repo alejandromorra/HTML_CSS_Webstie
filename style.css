@@ -2,6 +2,75 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+@media screen and (max-width: 768px) {
+  /* General adjustments */
+  section {
+    margin: 0 2rem; /* Reduce margins for better fitting */
+  }
+
+  /* Navigation */
+  .nav-links {
+    display: none; /* Hide desktop nav links */
+  }
+
+  #hamburger-nav {
+    display: block; /* Show hamburger menu */
+  }
+
+  /* Profile Section */
+  #profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .section__pic-container {
+    height: 150px;
+    width: 150px;
+  }
+
+  .section__pic-containertwo {
+    height: 250px;
+    width: 250px;
+  }
+
+  /* About Section */
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .details-container {
+    padding: 1rem;
+  }
+
+  /* Experience & Organizations */
+  .article-container,
+  .article-container-organizations {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Project Section */
+  .project-img {
+    width: 80%; /* Make images scale properly */
+  }
+
+  /* Contact Section */
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    height: auto;
+    padding: 1rem 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
