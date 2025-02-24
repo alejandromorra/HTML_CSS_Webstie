@@ -172,6 +172,21 @@ section {
 
 .section__pic-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;         /* Circle height */
+  width: 200px;          /* Circle width (same as height for a perfect circle) */
+  margin: auto 0;        /* Center the container vertically */
+  border-radius: 50%;    /* Makes the container circular */
+  overflow: hidden;      /* Ensures the content inside stays within the circle */
+}
+.section__pic-container img {
+  width: 100%;            /* Ensures image fills the container */
+  height: 100%;           /* Ensures image fills the container */
+  object-fit: cover;      /* Ensures the image covers the container without stretching */
+}
+.section__pic-containertwo {
+  display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
